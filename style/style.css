@@ -123,8 +123,8 @@ transition: 0.5s ease;
         justify-content:space-evenly;
         flex-direction: column;
         padding: 0 2%;
-        width: 100%;
-        min-height: 800px;
+        width: 90%;
+        /* min-height: 800px; */
 
     }
     .info{
@@ -417,47 +417,49 @@ header .direita .imagem img{
     opacity: 1;
     z-index: 1;
 }
-/* COntato*/
+
+
+/* Contato*/
+
 #contato .container{
     flex-direction: column;
-  height: 90vh;
+height: 90vh;
 
+}
+#contato .container .titulo{
+    min-height: 0;
+    margin-bottom: 50px;
 }
 #contato .conteudo{
     flex-direction:column;
     height: 90vh;    
 }
-#contato .conteudo{
-    flex-direction: row;
-}
-#contato .container .titulo{
-    min-height: 0;
-    margin-bottom: 60px;
-}
 
- 
+
 #contato .container .esquerda1{
-    box-shadow: 0 0 15px;
+    box-shadow: 0 0 15px #848790;
     margin: 2%;
     
 }
-        #contato .container .esquerda1 .box{
-            width: 100%;
-            height: 50vh;
-            background: #c3bcb7;
+#contato .container .esquerda1 .box{
+    width: 100%;
+    height: 50vh;
+    background: #c3bcb7;
 
 
-        }
+}
+#contato .conteudo{
+    flex-direction: row;
+}
+
         #contato .container .esquerda1 .box h1{
-            margin-bottom: 30px;
-            margin-top: 30px;
-            color: #1b3b56;
-
-
-
+            margin-bottom: 20px;
+            margin-top: 15px;
+            color: #1b3b56;  
+        
         }
         #contato .container .esquerda1 .box form{
-            width: 70%;
+            width: 80%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -497,16 +499,18 @@ header .direita .imagem img{
         #contato .container .esquerda1 .box form  input[type=submit]:hover{
             background:#8b634a
         }
+        
         #contato .container .direita1 .box{
             width: 100%;
-            height: 50vh;
+            height: 60vh;
             background: #c3bcb7;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         #contato .container .direita1{
-            box-shadow: 0 0 15px;
+            box-shadow: 0 0 15px #c3bcb7;
             margin: 2%;
             
         }
@@ -519,12 +523,12 @@ header .direita .imagem img{
 
         }
         #contato .container .direita1 .box h1{
-            margin-bottom: 30px;
-            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
             color: #1b3b56;
         }
         #contato .container .direita1 .box .icones{
-            width: 150%;
+            width: 150px;
             height: 300px;
             display: flex;
             flex-direction: column;
@@ -536,24 +540,28 @@ header .direita .imagem img{
             color: #1b3b56;
         }
 
-        #contato .container .direita1 .box .texto{
-            width: 150px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        #contato .container .direita1 .box .texto p{
+            #contato .container .direita1 .box .texto p{
           padding: 25px 0;
           font-size: 18px;
           font-weight: 600;
           color: #1b3b56;
         }
 
+        /*footer*/
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url('../img/fundo.jpg') no-repeat;
+    /* background-color: #c3bcb7; */
 
-
-
-
-
+}
+footer .container img{
+width: 100px;
+object-fit: contain;
+}
 
 
 /* Reponsividade*/
@@ -659,13 +667,14 @@ contato .content{
     height: 30vh;
 }
 #contato .container .esquerda1 .box,
-#contato .container .direita.box{
+#contato .container .direita1 .box{
     width: 80%;
     height: 35vh;
 }
 #contato .container .esquerda1 .box h1{
-    font-size: 18px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin-top: 18px;
 }
 #contato .container .esquerda1 .box form{
     width: 80%;
@@ -675,6 +684,33 @@ contato .container.esquerda1 .box form input[type=email],
 contato .container.esquerda1 .box form input[type=submit]{
     margin-top: 10px;
     font-size: 12px;
+}
+contato .container.esquerda1 .box .social{
+    margin-bottom: 25px;
+}
+contato .container.esquerda1 .box i{
+    font-size: 22px;
+}
+#contato .container .direita1 .box{
+    justify-content: flex-start;
+}
+#contato .container .direita1 .box h1{
+    font-size: 18px;
+
+}
+#contato .container .direita1 .box icones{
+    width: 100px;
+    height: 100px;
+}
+#contato .container .direita1 .box icones i{
+    font-size: 22px;
+}
+#contato .container .direita1 .box .texto{
+    height: 150px;
+
+}
+#contato .container .direita1 .box .texto p{
+    font-size: 16px;
 }
 
 }
