@@ -562,7 +562,11 @@ footer .container img{
 width: 100px;
 object-fit: contain;
 }
+footer .container p{
+    font-weight: 600;
+    font-family: 'Monteserrat Alternates',sans-serif;
 
+}
 
 /* Reponsividade*/
 
@@ -603,7 +607,14 @@ object-fit: contain;
         width: 90%;
         margin-top:20px ;
     }
-
+    footer .container {
+        flex-direction: column;
+        height: 150px;
+    }
+    footer .container p{
+        margin-top: 20px;
+        
+    }
 
 }
 @media screen and (max-width:648px){

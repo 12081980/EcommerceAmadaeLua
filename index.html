@@ -24,7 +24,7 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-                <div class="menu-movel">
+                <div class="menu-movel" onclick="myFunction()">
                     <i class="fa-solid fa-bars"></i>
                     <ul id="myLinks">
                         <li><a href="#">Home</a></li>
@@ -172,8 +172,8 @@
 <footer>
     <div class="container">
         <img src="./img/logo.jpg" alt="">
-        <p class="texto-pequeno"> Copyright @ 2022  Todos os direitos reservados</p>
-        <p class="testo-pequeno"> Tel: 920002796</p>
+        <p class="texto-pequeno"> Copyright@2022  Desenvolvido por: Emerson a SilvaWS</p>
+        <p class="texto-pequeno"> Tel: 920002796</p>
     </div>
 </footer>
 
@@ -182,7 +182,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
+/* menu-movel */
+<script>
+function myFunction(){
+    var x = document.getElementById("mylinks");
+    if(x.style.display==="block"){
+        x.style.display ="none";
+    }else{
+        x.stayle.display ="block";
+    }
+}
+</script>
 <script>
     var btn = document.querySelector("voltar-topo");
     btn.addEventListener("click", function () {
