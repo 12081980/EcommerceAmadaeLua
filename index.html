@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
     <title>Amada&Lua</title>
 </head>
 
@@ -18,19 +19,19 @@
                 <div class="logo"></div>
                 <div class="desktop-menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Novidades</a></li>
-                        <li><a href="#">Promoção</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#part">Novidades</a></li>
+                        <li><a href="#servicos">Promoção</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div class="menu-movel" onclick="myFunction()">
+                <div class="menu-movel" >
                     <i class="fa-solid fa-bars"></i>
-                    <ul id="myLinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Novidades</a></li>
-                        <li><a href="#">Promoção</a></li>
-                        <li><a href="#">Contato</a></li>
+                    <ul id="myLinks" onclick="myFunction()">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#part">Novidades</a></li>
+                        <li><a href="#servicos">Promoção</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,14 +50,15 @@
                 </div>
             </div>
         </div>
-        <button id="voltar-topo">Voltar ao topo</button>
+        <button  id="voltar-topo">Voltar ao topo</button>
     </header>
+
     <section class="max-width bg2" id="part">
         <div class="container">
             <div class="titulo">
-                <h2 class="text-md color-cinza-1">Novidades</h2>
+                <!-- <h2 class="text-md color-cinza-1">Novidades</h2> -->
                 <div class="line">
-                    <div class="texto-titulo">Roupas</div>
+                    <div class="texto-titulo">Novidades</div>
                 </div>
             </div>
             <div class="pagina2">
@@ -91,7 +93,7 @@
         <div class="container">
             <div class="conteudo">
                 <div class="titulo">
-                    <h2 class="text-md color-cinza-1">Promoção</h2>
+                    <!-- <h2 class="text-md color-cinza-1">Promoção</h2> -->
                     <div class="line">
                         <div class="texto-titulo">Promoções</div>
                     </div>
@@ -124,7 +126,7 @@
 <section  class="max-width bg"  id="contato">
     <div class="container">
         <div class="titulo">
-           <h2 class="text-md color-cinza-1">Contato</h2>
+           <!-- <h2 class="text-md color-cinza-1">Contato</h2> -->
            <div class="line">
             <div class="texto-titulo">Contato</div>
            </div>
@@ -169,10 +171,13 @@
         </div>
     </div>
 </section>
+
 <footer>
     <div class="container">
-        <img src="./img/logo.jpg" alt="">
-        <p class="texto-pequeno"> Copyright@2022  Desenvolvido por: Emerson a SilvaWS</p>
+       <div class="img">
+      <img src="./img/logo.jpg" alt="">
+       </div>
+        <p class="texto-pequeno"> Copyright@2022  Desenvolvido por: Emerson a Silva</p>
         <p class="texto-pequeno"> Tel: 920002796</p>
     </div>
 </footer>
@@ -182,20 +187,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-/* menu-movel */
+
 <script>
 function myFunction(){
     var x = document.getElementById("mylinks");
     if(x.style.display==="block"){
         x.style.display ="none";
     }else{
-        x.stayle.display ="block";
+        x.style.display ="block";
     }
 }
 </script>
 <script>
-    var btn = document.querySelector("voltar-topo");
-    btn.addEventListener("click", function () {
+    var btn = document.getElementById("voltar-topo");
+    btn.addEventListener("click", function(){
         window.scrollTo(0, 0);
     });
 </script>
