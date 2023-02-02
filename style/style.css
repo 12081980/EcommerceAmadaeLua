@@ -183,8 +183,14 @@ color: #1b3b56;
     right: 10px;
     padding: 5px 10px;
     color: #8b634a;
-
 }
+#voltar-topo:hover{
+    border: 1px solid #8b634a;
+        /* background: #8b634a; */
+        color: #fff;
+        transform: scale(1.10);
+}
+
 body::-webkit-scrollbar{
     width: 12px;    
 }
@@ -431,7 +437,7 @@ height: 90vh;
 }
 #contato .conteudo{
     flex-direction:column;
-    height: 90vh;    
+    height: 100vh;    
 }
 
 
@@ -442,7 +448,7 @@ height: 90vh;
 }
 #contato .container .esquerda1 .box{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background: url('../img/fundo.jpg') no-repeat;
 
 
@@ -465,7 +471,7 @@ height: 90vh;
         }
         #contato .container .esquerda1 .box form  input{
             padding: 10px;
-            margin-top: 20px;
+            margin-top: 25px;
             font-size:16px;
             border: none;
             outline: none;
@@ -510,8 +516,8 @@ height: 90vh;
         }
         
         #contato .container .direita1 .box{
-            width: 100%;
-            height: 50vh;          
+            width: 90%;
+            height: 60vh;          
             background: url('../img/fundo.jpg') no-repeat;
                   
 
